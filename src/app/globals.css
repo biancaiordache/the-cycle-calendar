@@ -1,26 +1,51 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary palette */
+  --cream: #F5F0E8;
+  --paper: #EBE5D9;
+  --dark: #2A2622;
+
+  /* Phase colors */
+  --menstrual: #C94A4A;
+  --follicular: #7EB87E;
+  --ovulatory: #8B7BB5;
+  --luteal: #5B8DB8;
+
+  /* Semantic */
+  --background: var(--cream);
+  --foreground: var(--dark);
 }
 
 @theme inline {
+  --color-cream: var(--cream);
+  --color-paper: var(--paper);
+  --color-dark: var(--dark);
+  --color-menstrual: var(--menstrual);
+  --color-follicular: var(--follicular);
+  --color-ovulatory: var(--ovulatory);
+  --color-luteal: var(--luteal);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-serif: var(--font-cormorant);
+  --font-sans: var(--font-dm-sans);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Paper texture overlay */
+.paper-texture {
+  position: relative;
+}
+
+.paper-texture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
 }

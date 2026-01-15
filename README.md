@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Cycle Calendar
+
+A cycle-awareness visual ritual for your iPhone lock screen. Each morning, your wallpaper updates to show where you are in a 28-day awareness cycle.
+
+## Features
+
+- **Daily wallpaper updates** - iOS Shortcut automation fetches the correct wallpaper each morning
+- **Four phases** - Inner Winter, Inner Spring, Inner Summer, Inner Autumn
+- **Multiple iPhone sizes** - Supports iPhone 13 through 16 series
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- Tailwind CSS 4
+- TypeScript
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/
+│   ├── page.tsx           # Marketing landing page
+│   ├── setup/             # iOS Shortcut setup instructions
+│   └── wallpaper/         # API endpoint for wallpaper redirect
+├── components/
+│   └── url-generator.tsx  # Date picker & model selector
+└── lib/
+    └── cycle-data.ts      # Cycle phases & iPhone model data
 
-## Learn More
+public/
+└── wallpapers/            # 28 wallpapers per device size
+    ├── 16-pro-max/        # 1320 × 2868 px
+    ├── 16-plus/           # 1290 × 2796 px
+    ├── 16-pro/            # 1206 × 2622 px
+    ├── 15/                # 1179 × 2556 px
+    ├── 14-plus/           # 1284 × 2778 px
+    ├── 14/                # 1170 × 2532 px
+    └── 13-mini/           # 1080 × 2340 px
+```
 
-To learn more about Next.js, take a look at the following resources:
+## API
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+GET /wallpaper?start=YYYY-MM-DD&model=15
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Returns a 302 redirect to the correct wallpaper image based on the cycle day.
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Deploy to Vercel:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npx vercel
+```
+
+## Disclaimer
+
+This is an awareness tool, not a medical tracker. It does not predict fertility, diagnose conditions, or replace professional medical advice.
