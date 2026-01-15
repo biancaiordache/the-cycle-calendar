@@ -22,7 +22,7 @@ export function UrlGenerator() {
   };
 
   return (
-    <div className="w-full max-w-md space-y-4">
+    <div className="w-full space-y-4 lg:max-w-md">
       <div className="space-y-2">
         <label
           htmlFor="start-date"
