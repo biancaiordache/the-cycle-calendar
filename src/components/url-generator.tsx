@@ -35,7 +35,7 @@ export function UrlGenerator() {
           id="start-date"
           value={startDate}
           onChange={(e) => setStartDate(e.target.value)}
-          className="w-full rounded-lg border border-dark/20 bg-paper py-2.5 pl-4 pr-4 text-dark focus:border-dark focus:outline-none focus:ring-1 focus:ring-dark"
+          className="w-full min-w-0 box-border rounded-lg border border-dark/20 bg-paper py-2.5 px-4 text-dark focus:border-dark focus:outline-none focus:ring-1 focus:ring-dark"
         />
       </div>
 
