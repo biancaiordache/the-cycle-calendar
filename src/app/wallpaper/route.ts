@@ -3,9 +3,11 @@ import { calculateCycleDay, iphoneModels, type IphoneModel } from "@/lib/cycle-d
 
 const validModels = iphoneModels.map((m) => m.id);
 
-// Map models to wallpaper folders
+// Map models to wallpaper folders (models with same resolution share folders)
 const modelToFolder: Record<IphoneModel, string> = {
+  "17-pro-max": "16-pro-max", // Same resolution as 16 Pro Max
   "16-pro-max": "16-pro-max",
+  "17": "16-plus", // Same resolution as 16 Plus
   "16-plus": "16-plus",
   "16-pro": "16-pro",
   "15": "15",

@@ -40,8 +40,18 @@ export const phases: Phase[] = [
 // Grouped by wallpaper resolution
 export const iphoneModels = [
   // 1320 × 2868 px
+  {
+    id: "17-pro-max",
+    label: "iPhone 17 Pro Max / 17 Air",
+    dimensions: "1320 × 2868 px",
+  },
   { id: "16-pro-max", label: "iPhone 16 Pro Max", dimensions: "1320 × 2868 px" },
   // 1290 × 2796 px
+  {
+    id: "17",
+    label: "iPhone 17 / 17 Pro",
+    dimensions: "1290 × 2796 px",
+  },
   {
     id: "16-plus",
     label: "iPhone 16 Plus / 15 Plus / 15 Pro Max / 14 Pro Max",
