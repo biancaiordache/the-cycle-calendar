@@ -283,7 +283,7 @@ export default function SetupPage() {
       {/* Footer */}
       <footer className="border-t border-dark/10 px-6 py-8">
         <p className="text-center text-sm text-dark/50">
-          &copy; {new Date().getFullYear()} The Cycle Calendar
+Made with <span className="text-menstrual">♥</span> by B. Iordache
         </p>
       </footer>
     </div>

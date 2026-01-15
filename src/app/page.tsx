@@ -86,6 +86,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <p className="absolute bottom-4 left-0 right-0 text-center text-sm text-dark/40 lg:bottom-6">
+        Made with <span className="text-menstrual">♥</span> by B. Iordache
+      </p>
     </div>
   );
 }
