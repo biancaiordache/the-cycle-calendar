@@ -33,7 +33,7 @@ export const phases: Phase[] = [
     season: "Inner Autumn",
     days: [18, 28],
     intentions: ["complete", "organize", "nest"],
-    color: "#5B8DB8",
+    color: "#7BAFD4",
   },
 ];
 
