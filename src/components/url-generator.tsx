@@ -22,7 +22,7 @@ export function UrlGenerator() {
   };
 
   return (
-    <div className="w-full space-y-4 lg:max-w-md">
+    <div className="w-full max-w-full space-y-4 overflow-hidden lg:max-w-md">
       <div className="space-y-2">
         <label
           htmlFor="start-date"
@@ -35,7 +35,7 @@ export function UrlGenerator() {
           id="start-date"
           value={startDate}
           onChange={(e) => setStartDate(e.target.value)}
-          className="w-full rounded-lg border border-dark/20 bg-paper px-4 py-2.5 text-dark focus:border-dark focus:outline-none focus:ring-1 focus:ring-dark"
+          className="box-border w-full max-w-full rounded-lg border border-dark/20 bg-paper px-4 py-2.5 text-dark focus:border-dark focus:outline-none focus:ring-1 focus:ring-dark"
         />
       </div>
 

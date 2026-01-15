@@ -31,9 +31,9 @@ export default function Home() {
         </div>
 
         {/* Right column */}
-        <div className="flex flex-col justify-center">
+        <div className="flex min-w-0 flex-col justify-center overflow-hidden">
           {/* Season labels */}
-          <div className="grid grid-cols-2 justify-items-center gap-3 text-sm sm:flex sm:flex-wrap sm:justify-center sm:gap-x-5 sm:gap-y-3 lg:justify-start">
+          <div className="mx-auto grid w-fit grid-cols-2 gap-x-8 gap-y-3 text-sm sm:flex sm:flex-wrap sm:justify-center sm:gap-x-5 sm:gap-y-3 lg:mx-0 lg:justify-start">
             <div className="flex items-center gap-2">
               <div
                 className="h-3 w-3 shrink-0 rounded-full bg-menstrual"
