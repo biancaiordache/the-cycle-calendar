@@ -46,18 +46,35 @@ export function UrlGenerator() {
         >
           iPhone model
         </label>
-        <select
-          id="iphone-model"
-          value={model}
-          onChange={(e) => setModel(e.target.value as IphoneModel)}
-          className="w-full rounded-lg border border-dark/20 bg-paper py-2.5 pl-4 pr-10 text-dark focus:border-dark focus:outline-none focus:ring-1 focus:ring-dark lg:pr-12"
-        >
-          {iphoneModels.map((m) => (
-            <option key={m.id} value={m.id}>
-              {m.label}
-            </option>
-          ))}
-        </select>
+        <div className="relative">
+          <select
+            id="iphone-model"
+            value={model}
+            onChange={(e) => setModel(e.target.value as IphoneModel)}
+            className="w-full appearance-none rounded-lg border border-dark/20 bg-paper py-2.5 pl-4 pr-10 text-dark focus:border-dark focus:outline-none focus:ring-1 focus:ring-dark"
+          >
+            {iphoneModels.map((m) => (
+              <option key={m.id} value={m.id}>
+                {m.label}
+              </option>
+            ))}
+          </select>
+          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
+            <svg
+              className="h-4 w-4 text-dark/60"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
 
       {generatedUrl && (
