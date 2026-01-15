@@ -25,6 +25,20 @@ export const metadata: Metadata = {
     url: "https://thecyclecalendar.com",
     siteName: "The Cycle Calendar",
     type: "website",
+    images: [
+      {
+        url: "https://thecyclecalendar.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "The Cycle Calendar - A wallpaper that shifts with your 28-day cycle",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Cycle Calendar",
+    description: "A cycle-awareness visual ritual for your iPhone lock screen.",
+    images: ["https://thecyclecalendar.com/og-image.png"],
   },
 };
 
