@@ -122,16 +122,16 @@ export default function SetupPage() {
             </div>
             <div className="mt-4 space-y-3 text-dark/80">
               <p>
-                In the shortcut editor, tap <strong>Add Action</strong> or use
-                the search bar.
+                Tap <strong>Create New Shortcut</strong>.
               </p>
               <p>
-                Search for <strong>&ldquo;Get Contents of URL&rdquo;</strong>{" "}
-                and tap it to add.
+                Use the search bar at the bottom to search for{" "}
+                <strong>&ldquo;Get Contents of URL&rdquo;</strong> and tap it to
+                add.
               </p>
               <p>
                 Tap the blue <strong>URL</strong> text and paste your personal
-                wallpaper URL.
+                wallpaper URL that you copied in the previous page.
               </p>
             </div>
             <div className="mt-4 rounded-lg bg-cream p-4">
@@ -149,16 +149,13 @@ export default function SetupPage() {
                 5
               </span>
               <h3 className="font-serif text-lg font-semibold text-dark">
-                Add &ldquo;Set Wallpaper&rdquo; Action
+                Add &ldquo;Set Wallpaper Photo&rdquo; Action
               </h3>
             </div>
             <div className="mt-4 space-y-3 text-dark/80">
               <p>
-                Tap the <strong>+</strong> button to add another action.
-              </p>
-              <p>
-                Search for <strong>&ldquo;Set Wallpaper&rdquo;</strong> and tap
-                it to add.
+                Use the search bar at the bottom of the screen to search for{" "}
+                <strong>&ldquo;Set Wallpaper Photo&rdquo;</strong> and tap it to add.
               </p>
               <p>
                 Make sure the input is set to <strong>Contents of URL</strong>{" "}
@@ -187,7 +184,7 @@ export default function SetupPage() {
                 or prompt you daily.
               </p>
               <p>
-                In the <strong>Set Wallpaper</strong> action, tap the{" "}
+                In the <strong>Set Wallpaper Photo</strong> action, tap the{" "}
                 <strong>&gt;</strong> arrow to expand options.
               </p>
               <p>
@@ -237,7 +234,7 @@ export default function SetupPage() {
               </p>
               <p className="mt-1 text-sm text-dark/70">
                 Make sure &ldquo;Show Preview&rdquo; and &ldquo;Crop to
-                Subject&rdquo; are both disabled in the Set Wallpaper action.
+                Subject&rdquo; are both disabled in the Set Wallpaper Photo action.
               </p>
             </div>
             <div>
