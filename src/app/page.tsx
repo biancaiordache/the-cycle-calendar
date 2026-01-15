@@ -33,7 +33,7 @@ export default function Home() {
         {/* Right column */}
         <div className="flex flex-col justify-center">
           {/* Season labels */}
-          <div className="grid grid-cols-2 gap-3 text-sm sm:flex sm:flex-wrap sm:justify-center sm:gap-x-5 sm:gap-y-3 lg:justify-start">
+          <div className="grid grid-cols-2 justify-items-center gap-3 text-sm sm:flex sm:flex-wrap sm:justify-center sm:gap-x-5 sm:gap-y-3 lg:justify-start">
             <div className="flex items-center gap-2">
               <div
                 className="h-3 w-3 shrink-0 rounded-full bg-menstrual"
@@ -65,7 +65,7 @@ export default function Home() {
           </div>
 
           {/* Cycle awareness copy */}
-          <p className="mt-4 text-sm leading-relaxed text-dark/60">
+          <p className="mt-4 text-center text-sm leading-relaxed text-dark/60 lg:text-left">
             Your body moves through four distinct phases each month, each with
             its own energy and needs. When you align your habits, movement, and
             nourishment with these natural rhythms, everything flows a little
@@ -76,12 +76,12 @@ export default function Home() {
           <div className="my-6 h-px bg-dark/10" />
 
           {/* Section header */}
-          <h2 className="font-serif text-xl font-semibold text-dark sm:text-2xl">
+          <h2 className="text-center font-serif text-xl font-semibold text-dark sm:text-2xl lg:text-left">
             Set Up Your Wallpaper
           </h2>
-          <p className="mt-1 text-sm text-dark/50">(iOS only for now)</p>
+          <p className="mt-1 text-center text-sm text-dark/50 lg:text-left">(iOS only)</p>
 
-          <div className="mt-4">
+          <div className="mt-4 flex justify-center lg:justify-start">
             <UrlGenerator />
           </div>
         </div>

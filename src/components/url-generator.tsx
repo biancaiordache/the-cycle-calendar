@@ -50,8 +50,7 @@ export function UrlGenerator() {
           id="iphone-model"
           value={model}
           onChange={(e) => setModel(e.target.value as IphoneModel)}
-          className="w-full rounded-lg border border-dark/20 bg-paper py-2.5 text-dark focus:border-dark focus:outline-none focus:ring-1 focus:ring-dark"
-          style={{ paddingLeft: "16px", paddingRight: "48px" }}
+          className="w-full rounded-lg border border-dark/20 bg-paper py-2.5 pl-4 pr-10 text-dark focus:border-dark focus:outline-none focus:ring-1 focus:ring-dark lg:pr-12"
         >
           {iphoneModels.map((m) => (
             <option key={m.id} value={m.id}>
