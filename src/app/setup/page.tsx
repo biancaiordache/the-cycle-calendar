@@ -239,6 +239,17 @@ export default function SetupPage() {
             </div>
             <div>
               <p className="font-medium text-dark">
+                Wallpaper not changing at all?
+              </p>
+              <p className="mt-1 text-sm text-dark/70">
+                In the Set Wallpaper Photo action, make sure you&apos;ve selected
+                the specific wallpaper you want to update. Tap the wallpaper name
+                (e.g., &ldquo;Wallpaper 3&rdquo;) and choose your current lock
+                screen wallpaper from the list.
+              </p>
+            </div>
+            <div>
+              <p className="font-medium text-dark">
                 Automation not running automatically?
               </p>
               <p className="mt-1 text-sm text-dark/70">
