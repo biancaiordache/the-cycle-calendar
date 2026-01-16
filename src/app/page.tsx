@@ -89,7 +89,15 @@ export default function Home() {
 
       {/* Footer */}
       <p className="absolute bottom-4 left-0 right-0 text-center text-sm text-dark/40 lg:bottom-6">
-        Made with <span className="text-menstrual">♥</span> by B. Iordache
+        Made with <span className="text-menstrual">♥</span> by{" "}
+        <a
+          href="https://x.com/biiordache"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-dark/60"
+        >
+          @biiordache
+        </a>
       </p>
     </div>
   );
