@@ -21,8 +21,10 @@ export function UrlGenerator() {
     }
   };
 
+  const inputStyles = "w-full rounded-lg border border-dark/20 bg-paper py-2.5 pl-4 pr-4 text-dark focus:border-dark focus:outline-none focus:ring-1 focus:ring-dark";
+
   return (
-    <div className="w-full max-w-full space-y-4 overflow-hidden lg:max-w-md">
+    <div className="w-full space-y-4 lg:max-w-md">
       <div className="space-y-2">
         <label
           htmlFor="start-date"
@@ -35,7 +37,7 @@ export function UrlGenerator() {
           id="start-date"
           value={startDate}
           onChange={(e) => setStartDate(e.target.value)}
-          className="w-full min-w-0 box-border rounded-lg border border-dark/20 bg-paper py-2.5 px-4 text-dark focus:border-dark focus:outline-none focus:ring-1 focus:ring-dark"
+          className={inputStyles}
         />
       </div>
 
@@ -46,35 +48,18 @@ export function UrlGenerator() {
         >
           iPhone model
         </label>
-        <div className="relative">
-          <select
-            id="iphone-model"
-            value={model}
-            onChange={(e) => setModel(e.target.value as IphoneModel)}
-            className="w-full appearance-none rounded-lg border border-dark/20 bg-paper py-2.5 pl-4 pr-10 text-dark focus:border-dark focus:outline-none focus:ring-1 focus:ring-dark"
-          >
-            {iphoneModels.map((m) => (
-              <option key={m.id} value={m.id}>
-                {m.label}
-              </option>
-            ))}
-          </select>
-          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3">
-            <svg
-              className="h-4 w-4 text-dark/60"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </div>
-        </div>
+        <select
+          id="iphone-model"
+          value={model}
+          onChange={(e) => setModel(e.target.value as IphoneModel)}
+          className={inputStyles}
+        >
+          {iphoneModels.map((m) => (
+            <option key={m.id} value={m.id}>
+              {m.label}
+            </option>
+          ))}
+        </select>
       </div>
 
       {generatedUrl && (
