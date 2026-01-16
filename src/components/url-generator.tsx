@@ -21,10 +21,10 @@ export function UrlGenerator() {
     }
   };
 
-  const inputStyles = "w-full rounded-lg border border-dark/20 bg-paper py-2.5 pl-4 pr-4 text-dark focus:border-dark focus:outline-none focus:ring-1 focus:ring-dark";
+  const inputStyles = "w-full max-w-full rounded-lg border border-dark/20 bg-paper py-2.5 pl-4 pr-6 text-dark focus:border-dark focus:outline-none focus:ring-1 focus:ring-dark";
 
   return (
-    <div className="w-full space-y-4 lg:max-w-md">
+    <div className="w-full space-y-4">
       <div className="space-y-2">
         <label
           htmlFor="start-date"

@@ -81,7 +81,7 @@ export default function Home() {
           </h2>
           <p className="mt-1 text-center text-sm text-dark/50 lg:text-left">(iOS only)</p>
 
-          <div className="mt-4 flex justify-center lg:justify-start">
+          <div className="mt-4 w-full lg:max-w-md">
             <UrlGenerator />
           </div>
         </div>

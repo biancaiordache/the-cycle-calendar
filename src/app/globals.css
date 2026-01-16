@@ -36,6 +36,14 @@ body {
   color: var(--foreground);
 }
 
+/* Fix iOS date input overflow */
+input[type="date"] {
+  max-width: 100%;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 /* Paper texture overlay */
 .paper-texture {
   position: relative;
